@@ -1,75 +1,46 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>p.minn</groupId>
-  <artifactId>minn-ai</artifactId>
-  <version>0.0.1</version>
-  <name>minn</name>
-  <description>ai </description>
-    <properties>
-       <!-- The sample code requires at least JDK 1.7. -->
-       <!-- The maven compiler plugin defaults to a lower version -->
-       <maven.compiler.source>1.7</maven.compiler.source>
-       <maven.compiler.target>1.7</maven.compiler.target>
-     </properties>
-  <dependencies>
-     <dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>p.minn</groupId>
+	<artifactId>minn-ai</artifactId>
+	<version>0.0.1</version>
+	<name>minn</name>
+	<description>ai </description>
+	<properties>
+		<!-- The sample code requires at least JDK 1.7. -->
+		<!-- The maven compiler plugin defaults to a lower version -->
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<dependency>
 			<groupId>p.minn</groupId>
 			<artifactId>minn-base</artifactId>
 			<version>0.0.1</version>
-	</dependency>
-     <dependency>
-		<groupId>p.minn</groupId>
-		<artifactId>minn-hadoop</artifactId>
-		<version>0.0.1</version>
-	 </dependency>
-	 <dependency>
-         <groupId>org.tensorflow</groupId>
-         <artifactId>tensorflow</artifactId>
-         <version>1.1.0-rc2</version>
-         <exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-log4j12</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-			</exclusions>
-       </dependency>
-       <dependency>
+		</dependency>
+		<dependency>
+			<groupId>p.minn</groupId>
+			<artifactId>minn-hadoop</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tensorflow</groupId>
+			<artifactId>tensorflow</artifactId>
+			<version>1.1.0-rc2</version>
+		</dependency>
+		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
 			<version>1.2.1</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-log4j12</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.4</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-log4j12</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
-  </dependencies>
-  <organization>
-  	<url>http://fmfl.iteye.com</url>
-  	<name>minn</name>
-  </organization>
+	</dependencies>
+	<organization>
+		<url>http://fmfl.iteye.com</url>
+		<name>minn</name>
+	</organization>
 </project>
